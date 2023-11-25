@@ -1,0 +1,14 @@
+/env
+__pycache__/
+*.py[cod]
+config.env
+.vscode/
+
+dependencies
+
+Test/test.pdf
+Test/images
+
+lambda_function.zip
+
+/lib

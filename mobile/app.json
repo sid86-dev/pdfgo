@@ -1,0 +1,79 @@
+{
+  "expo": {
+    "name": "gopdf",
+    "slug": "gopdf",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "config": {
+        "usesNonExemptEncryption": false
+      },
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Allow gopdf to access your photos.",
+        "NSPhotoLibraryAddUsageDescription": "Allow goPdf to save photos."
+      },
+      "bundleIdentifier": "com.sid86.gopdf"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.INTERNET"
+      ],
+      "package": "com.sid86.gopdf"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-file-system",
+        {
+          "web": {
+            "useFetch": false
+          },
+          "android": {
+            "permissions": [
+              "WRITE_EXTERNAL_STORAGE",
+              "READ_EXTERNAL_STORAGE"
+            ]
+          }
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow gopdf to access your photos.",
+          "savePhotosPermission": "Allow goPdf to save photos."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "cce87fc4-cd16-4abc-b0a0-e1afa19ed566"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/cce87fc4-cd16-4abc-b0a0-e1afa19ed566"
+    }
+  },
+  "runtimeVersion": "1.0.0"
+}
